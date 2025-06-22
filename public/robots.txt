@@ -1,0 +1,33 @@
+# https://www.it-ib.com/robots.txt
+
+# Allow all search engines
+User-agent: *
+Allow: /
+Disallow: /api/
+Disallow: /admin/
+Disallow: /_next/
+Disallow: /private/
+
+# Specific rules for Googlebot
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 0
+
+# Specific rules for Bingbot
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
+
+# Block bad bots
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+# Sitemap location
+Sitemap: https://www.it-ib.com/sitemap.xml
+Sitemap: https://www.it-ib.com/sitemap-ar.xml
+
+# Host (optional, some search engines use this)
+Host: https://www.it-ib.com
