@@ -1,4 +1,4 @@
-import { lazy, Suspense } from "react";
+import {  Suspense } from "react";
 import { Routes, Route } from "react-router-dom"; // v6 import
 import Footer from "../components/Footer";
 import Header from "../components/Header";

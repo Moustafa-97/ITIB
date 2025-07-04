@@ -1,0 +1,15 @@
+/* TEAM */
+CEO & Founder: Mohamed Abd ElQawy
+Site: https://www.it-ib.com
+Location: Cairo, Egypt
+
+/* THANKS */
+Translation Team: ITIB Professional Translators
+Interpretation Team: ITIB Certified Interpreters
+
+/* SITE */
+Last update: 2024/01/15
+Language: English / Arabic
+Standards: HTML5, CSS3, ES6+
+Components: React, TypeScript
+Tools: React, i18next, styled-components

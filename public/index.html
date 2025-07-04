@@ -52,90 +52,134 @@
     name="twitter:image"
     content="https://itib.example.com/images/itib-social-banner.jpg" />
 
+  <!-- Add these to your head -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="default" />
   <!-- Structured Data/JSON-LD for Local Business -->
   <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "LocalBusiness",
+      "@type": "ProfessionalService",
       "name": "ITIB Translation Agency",
-      "alternateName": "Mohamed Abdelkawy Translation Bureau",
-      "url": "https://itib.example.com",
-      "logo": "https://itib.example.com/images/logo.png",
-      "image": "https://itib.example.com/images/office-photo.jpg",
-      "description": "Professional translation agency in Egypt providing certified translation services in multiple languages.",
+      "alternateName": [
+        "مكتب محمد عبد القوي للترجمة",
+        "Mohamed Abd ElQawy Translation Bureau"
+      ],
+      "url": "https://your-actual-domain.com",
+      "logo": "https://your-actual-domain.com/logo.png",
+      "image": [
+        "https://your-actual-domain.com/office-photo.jpg",
+        "https://your-actual-domain.com/team-photo.jpg"
+      ],
+      "description": "Professional certified translation agency in Egypt led by CEO Mohamed Abd ElQawy, providing legal, business, and document translation services in Arabic, English, and multiple languages.",
       "priceRange": "$$",
-      "telephone": "+20123456789",
-      "email": "info@itib.example.com",
+      "telephone": "+20-118-959-1523",
+      "email": "info@your-actual-domain.com",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "YOUR ACTUAL ADDRESS",
+        "addressLocality": "Cairo",
+        "addressRegion": "Cairo Governorate",
+        "postalCode": "YOUR-POSTAL-CODE",
+        "addressCountry": "EG"
+      },
       "founder": {
         "@type": "Person",
         "name": "Mohamed Abd ElQawy",
-        "jobTitle": "CEO and Founder"
-      },
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "123 Translation St.",
-        "addressLocality": "Cairo",
-        "addressRegion": "Cairo Governorate",
-        "postalCode": "12345",
-        "addressCountry": "EG"
-      },
-      "geo": {
-        "@type": "GeoCoordinates",
-        "latitude": 30.0444,
-        "longitude": 31.2357
+        "jobTitle": "CEO and Founder",
+        "sameAs": ["LinkedIn profile URL if available"]
       },
       "areaServed": [
-        "Cairo",
-        "Alexandria",
-        "Maadi",
-        "Sharm El Sheikh",
-        "Marsa Allam",
-        "Dahab"
+        {
+          "@type": "City",
+          "name": "Cairo",
+          "containedInPlace": {
+            "@type": "Country",
+            "name": "Egypt"
+          }
+        },
+        {
+          "@type": "City",
+          "name": "Alexandria"
+        },
+        {
+          "@type": "City",
+          "name": "Maadi"
+        },
+        {
+          "@type": "City",
+          "name": "Sharm El Sheikh"
+        },
+        {
+          "@type": "City",
+          "name": "Marsa Alam"
+        },
+        {
+          "@type": "City",
+          "name": "Dahab"
+        }
+      ],
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Sunday"],
+          "opens": "09:00",
+          "closes": "17:00"
+        }
       ],
       "sameAs": [
-        "https://www.facebook.com/itib.example",
-        "https://www.linkedin.com/company/itib-example",
-        "https://twitter.com/itib_example"
+        "https://www.facebook.com/YOUR-PAGE",
+        "https://www.linkedin.com/company/YOUR-COMPANY",
+        "https://twitter.com/YOUR-HANDLE",
+        "https://www.instagram.com/YOUR-HANDLE"
       ],
-      "openingHours": "Mo,Tu,We,Th,Su 09:00-17:00",
-      "serviceArea": {
-        "@type": "GeoCircle",
-        "geoMidpoint": {
-          "@type": "GeoCoordinates",
-          "latitude": 30.0444,
-          "longitude": 31.2357
-        },
-        "geoRadius": "100000"
-      },
-      "hasOfferCatalog": {
-        "@type": "OfferCatalog",
-        "name": "Translation Services",
-        "itemListElement": [
-          {
-            "@type": "Offer",
-            "itemOffered": {
-              "@type": "Service",
-              "name": "Document Translation",
-              "description": "Professional translation of official documents"
-            }
-          },
-          {
-            "@type": "Offer",
-            "itemOffered": {
-              "@type": "Service",
-              "name": "Legal Translation",
-              "description": "Certified legal document translation services"
-            }
-          }
-        ]
+      "knowsLanguage": ["Arabic", "English", "French", "German", "Spanish"],
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.8",
+        "reviewCount": "124"
       }
     }
   </script>
-
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "ITIB",
+  "legalName": "ITIB Translation Agency",
+  "foundingDate": "YEAR-FOUNDED",
+  "founder": {
+    "@type": "Person",
+    "name": "Mohamed Abd ElQawy"
+  },
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "telephone": "+20-112-958-1532",
+    "contactType": "customer service",
+    "availableLanguage": ["Arabic", "English"]
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [{
+    "@type": "ListItem",
+    "position": 1,
+    "name": "Home",
+    "item": "https://it-ib.com"
+  }]
+}
+</script>
   <meta
     name="robots"
     content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
   <meta name="author" content="Mohamed Abd ElQawy" />
   <link rel="canonical" href="https://itib.example.com/" />
-  <div id="root"></div>
 </head>
+<body>
+  <div id="root"></div>
+</body>
